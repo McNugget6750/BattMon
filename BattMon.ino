@@ -1,3 +1,19 @@
+/*
+   Author: Timo Birnschein (timo.birnschein@microforge.de)
+   Date: 2021/01/19
+   License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+
+   Overview:
+   5 channel battery monitor with calibration (magic numbes in the code, marked with comment).
+   Displays all data on 2.4" display using my all time favorite library:
+   https://github.com/Bodmer/TFT_ST7735
+
+   Note: On the board, there is also an NRF wireless module but I'm not using it yet.
+   It's also questionable if the RF24Network library fits into the remaining 2KB of flash.
+   The tft library is darn large. However, I haven't tried cranking up the code optimization level.
+
+*/
+
 #include <Adafruit_GFX.h>    // Core graphics library
 //#include <Adafruit_ST7735.h> // Hardware-specific library
 #include <TFT_ST7735.h> // Hardware-specific library
